@@ -1,0 +1,96 @@
+.about-us-main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.about-us-text {
+    text-align: right;
+    font-size: 3.5em;
+    margin: 0 1rem 0 0;
+}
+
+.about-us-text .accent-text {
+    color: #BC3A80;
+    font-size: 5rem;
+}
+
+.icon-section {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    width: 290px;
+    background-color: #202027;
+    margin: 2rem 1rem;
+    text-align: center;
+    font-size: 1.9rem;
+    border-radius: 11px;
+    padding: 3.7rem 2.5rem;
+}
+
+.icon-section .btn {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .icon-section {
+        flex-direction: column;
+    }
+    .about-us-text {
+        text-align: center;
+        margin: 0;
+    }
+    .about-us-text .accent-text {
+        font-size: inherit;
+    }
+}
+
+.about-us-page-circle-1 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.about-us-page-circle-1::before {
+    content: '';
+    transform: translate(-20%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(188, 58, 128, 0.1);
+}
+
+.about-us-page-circle-2 {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    top: 0;
+    right: 15vw;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.about-us-page-circle-2::before {
+    content: '';
+    transform: translateY(-30%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(23, 98, 167, 0.1);
+}
+
